@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #haulyShow
+\*------------------------------------*/
+
+.haulyShow {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.haulyShow__viewport {
+    position: relative;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.haulyShow__viewport figure {
+    float: left;
+    text-align: center;
+    margin: 0;
+}
+
+.haulyShow__controls {
+    position: absolute;
+    top: 50%;
+    height: 0;
+    margin-top: -1em;
+    width: 100%;
+    background: #0f0;
+}
