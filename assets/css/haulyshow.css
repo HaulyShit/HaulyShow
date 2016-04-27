@@ -1,30 +1,36 @@
 /*------------------------------------*\
-    #haulyShow
-\*------------------------------------*/
-
-.haulyShow {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
+ #haulyShow
+ \*------------------------------------*/
+.haulyShow
+{
+    width : 100%;
+    position : relative;
+    overflow : hidden;
+    font-size: 32px;
 }
-
-.haulyShow__viewport {
-    position: relative;
-    left: 0;
-    transition: all 1s ease;
+.haulyShow-slide
+{
+    float : left;
+    text-align : center;
+    margin : 0;
+    opacity : 0;
+    transition : all .75s ease;
 }
-
-.haulyShow__viewport figure {
-    float: left;
-    text-align: center;
-    margin: 0;
+.haulyShow-slide.active
+{
+    opacity : 1;
 }
-
-.haulyShow__controls {
-    position: absolute;
-    top: 50%;
-    height: 0;
-    margin-top: -1em;
-    width: 100%;
-    background: #0f0;
+.haulyShow-viewport
+{
+    position : relative;
+    left : 0;
+    transition : all .75s ease;
+}
+.haulyShow-controls
+{
+    position : absolute;
+    top : 50%;
+    height : 0;
+    width : 100%;
+    margin-top : -1em;
 }
